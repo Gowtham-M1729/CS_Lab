@@ -1,0 +1,7 @@
+set title 'Compute X^Y'
+set xrange[10:100]
+set yrange[10:100]
+set xlabel 'Input size (n)'
+set ylabel 'Operation Count'
+set style data linespoints
+plot "Expcount.txt" 

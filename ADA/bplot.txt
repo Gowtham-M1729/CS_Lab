@@ -1,0 +1,11 @@
+set title 'binary search'
+set xrange [0:100]
+set yrange [0:50]
+set xlabel 'inputsize (n)'
+set ylabel 'operation count'
+set style data line
+f(x)=a*(log(x)/log(2))
+fit f(x) 'binary_W_count.txt' using 1:2 via a
+g(x)= c*(log(x)/log(2))
+plot f(x) title 'worst case'
+pause -1 'hit any key to continue"
